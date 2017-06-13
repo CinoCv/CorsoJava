@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee" version="3.0"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+	<display-name>Analizza</display-name>
+	<servlet>
+		<servlet-name>Analizza</servlet-name>
+		<servlet-class>analisiboolean.Analisi</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Analizza</servlet-name>
+		<url-pattern>/Analizza</url-pattern>
+	</servlet-mapping>
+
+
+	<display-name>ProvaTesto</display-name>
+	<servlet>
+		<servlet-name>ProvaTesto</servlet-name>
+		<servlet-class>analisiboolean.ProvaTesto</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ProvaTesto</servlet-name>
+		<url-pattern>/ProvaTesto</url-pattern>
+	</servlet-mapping>
+
+
+<display-name>Scegli momento giornata</display-name>
+	<servlet>
+		<servlet-name>Scegli momento giornata</servlet-name>
+		<servlet-class>analisiboolean.Giornata</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Scegli momento giornata</servlet-name>
+		<url-pattern>/Giornata</url-pattern>
+	</servlet-mapping>
+	
+	<display-name>AltraServerlet</display-name>
+	<servlet>
+		<servlet-name>AltraServlet</servlet-name>
+		<servlet-class>analisiboolean.NavigazionePagine</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>AltraServlet</servlet-name>
+		<url-pattern>/NavigazionePagine</url-pattern>
+	</servlet-mapping>
+	
+		<display-name>CittaPaesi</display-name>
+	<servlet>
+		<servlet-name>CittaPaesi</servlet-name>
+		<servlet-class>analisiboolean.CittaPaesi</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>CittaPaesi</servlet-name>
+		<url-pattern>/CittaPaesi</url-pattern>
+	</servlet-mapping>
+	
+	
+		<display-name>tuttiPaesiCitta</display-name>
+	<servlet>
+		<servlet-name>tuttiPaesiCitta</servlet-name>
+		<servlet-class>analisiboolean.TuttiPaesiCitta</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>tuttiPaesiCitta</servlet-name>
+		<url-pattern>/tuttiPaesiCitta</url-pattern>
+	</servlet-mapping>
+	
+	
+			<display-name>TuttiPaesiCittaPost</display-name>
+	<servlet>
+		<servlet-name>TuttiPaesiCittaPost</servlet-name>
+		<servlet-class>analisiboolean.TuttiPaesiCittaPost</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>TuttiPaesiCittaPost</servlet-name>
+		<url-pattern>/tuttiPaesiCittaPost</url-pattern>
+	</servlet-mapping>
+</web-app>
